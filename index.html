@@ -26,31 +26,50 @@
 </head>
 
 <body>
-    <header class="container mx-auto">
+    <header class=" mx-auto">
 
         <!-- navber section -->
-        <div class="navbar bg-[#F85559] rounded-[600px] max-w-[1440px] h-[120px] mx-auto mt-12 flex  justify-between ">
-            <div class="bg-[#F85559] rounded-[600px] gap-[30px] ml-[50px] ">
-                <a class="text-[#fff] text-lg font-medium" href="">Home</a>
-                <a class="text-[#fff] text-lg font-medium" href="">About Us</a>
-                <a class="text-[#fff] text-lg font-medium" href="">Shop</a>
+        <div class="navbar lg:bg-[#F85559] rounded-[600px] lg:max-w-[1440px] h-[120px] lg:mx-auto ml-11 mt-12 xl:flex  xl:justify-between ">
+
+            <div class="hidden md:visible xl:block gap-[30px] ml-[50px] ">
+                <a class="text-[#fff] text-lg font-medium mr-[30px]" href="">Home</a>
+                <a class="text-[#fff] text-lg font-medium mr-[30px]" href="">About Us</a>
+                <a class="text-[#fff] text-lg font-medium mr-[30px]" href="">Shop</a>
                 <a class="text-[#fff] text-lg font-medium" href="">All Fruits</a>
             </div>
-            <div class="navbar-center gap-4 justify-center">
+            <div class="navbar-center gap-4 justify-center ml-20 ">
                 <img src="/images/logo.png" alt="">
-                <h2 class="text-[40px] font-bold text-[#fff]">Fruit Burst</h2>
+                <h2 class="text-[40px] font-bold lg:text-[#fff]">Fruit Burst</h2>
             </div>
-            <div>
+            
+            <div class="invisible md:visible ml-24">
                 <label class="input input-bordered flex items-center gap-2 rounded-[50px] w-[400px] h-[56px] mr-[50px] px-[29.5px]">
                     <input type="text" class="grow" placeholder="Search here" />
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
                   </label>
             </div>
+
+            <div class="lg:visible  xl:hidden  ">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
         </div>
 
     </header>
     <main>
-
+           
+        
     </main>
     <footer>
 
